@@ -1,0 +1,9 @@
+
+<h1>All Questions!</h1>
+{{#each model as |question|}}
+  <p>{{question.question}}</p>
+  <form class="" action="index.html" method="post">
+    <input type="text" value=answer>
+    <button {{action 'saveA'}}>Save Answer</button>
+  </form>
+{{/each}}
